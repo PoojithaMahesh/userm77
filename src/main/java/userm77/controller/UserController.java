@@ -20,14 +20,13 @@ public static void main(String[] args) {
 	switch (choice) {
 	case 1:
 	{
-		System.out.println("enter id");
-		int id=scanner.nextInt();
+		
 		System.out.println("ente name");
         String name=scanner.next();
         System.out.println("enter address");
         String address=scanner.next();
         User user=new User();
-        user.setId(id);
+      
         user.setName(name);
         user.setAddress(address);
         dao.saveUser(user);
